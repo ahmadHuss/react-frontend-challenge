@@ -1,0 +1,61 @@
+// div
+.dropdown {
+  position: relative;
+}
+
+.dropdown__button {
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #171717;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #979797;
+  padding: 6px 22px 6px 22px;
+  font-size: 14px;
+  border-radius: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.dropdown__button--icon {
+  margin-left: 12px;
+}
+
+// Dropdown Menu
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  padding: 14px 0;
+  margin-top: 4px;
+  font-size: 1rem;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #979797;
+}
+
+.dropdown-menu > div {
+  display: block;
+  width: 100%;
+  padding: 4px 14px;
+  clear: both;
+  text-align: left;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+}

@@ -1,0 +1,93 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.autocomplete {
+  position: relative;
+  width: 560px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  height: 48px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #171717;
+  background-color: #fff;
+  border: 1px solid #979797;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:focus {
+    color: #171717;
+    background-color: #fff;
+    border-color: #979797;
+    outline: 0;
+    box-shadow: none;
+  }
+
+  &::-moz-placeholder {
+    color: #8F92A1;
+    opacity: 1;
+  }
+
+  &::placeholder {
+    color: #8F92A1;
+  }
+}
+
+// ul
+.form-input__box {
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  border: 1px solid #979797;
+  list-style: none;
+  margin-top: 4px;
+  padding: 14px 0;
+  overflow: auto;
+ // max-height: 230px;
+  width: 100%;
+
+
+  > li {
+    padding: 12px 14px;
+  }
+
+ > li[data-focus="true"] {
+    background-color: #f1f1f1;
+    color: #171717;
+    cursor: pointer;
+}
+
+ > li:active {
+     background-color: #f1f1f1;
+     color: #171717;
+  }
+}
+
+
+.form-input__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-input__item-1 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+}
+
+.form-input__item-1--rating {
+  margin-top: 2px;
+}
+
+.form-input__item-2 {
+  font-size: 14px;
+  color: #777777;
+}

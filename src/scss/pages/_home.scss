@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+body {
+  background-color: #fbfbfb;
+}
+
+
+.app {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 100vh;
+}
+
+.app__box {
+  max-width: 1200px;
+  width: 100%;
+  padding: 14px;
+  margin: 0 auto;
+}
+
+.app__group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/*
+.app__group > .autocomplete {
+  flex: 1 1 auto;
+  width: 1%;
+  margin-bottom: 0;
+}
+*/
+
+.app__append {
+  display: flex;
+}
+
+.app__append > .dropdown {
+  display: flex;
+  margin-left: 8px;
+}
